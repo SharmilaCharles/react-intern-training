@@ -1,0 +1,102 @@
+/* ===== TeamCard ===== */
+.team-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 28px 32px;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+/* Glow overlay on hover */
+.card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(108, 99, 255, 0.15) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition);
+  pointer-events: none;
+}
+
+.team-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 24px 56px rgba(108, 99, 255, 0.25);
+  border-color: var(--primary);
+}
+
+.team-card:hover .card-glow {
+  opacity: 1;
+}
+
+/* Avatar */
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(108,99,255,0.3), rgba(255,101,132,0.3));
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 2.4rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.team-card:hover .avatar {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.4);
+}
+
+/* Name & Role */
+.member-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.member-role {
+  font-size: 0.88rem;
+  color: var(--primary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Divider */
+.card-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+  transition: background var(--transition);
+}
+
+.team-card:hover .card-divider {
+  background: rgba(108, 99, 255, 0.4);
+}
+
+/* LinkedIn button */
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(108, 99, 255, 0.1);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  color: var(--primary);
+  padding: 9px 22px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.linkedin-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(108, 99, 255, 0.4);
+  transform: scale(1.05);
+}
