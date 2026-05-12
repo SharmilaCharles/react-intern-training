@@ -1,0 +1,137 @@
+.app {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.app-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  font-size: 1.1em;
+  opacity: 0.9;
+}
+
+.app-main {
+  padding: 40px;
+}
+
+/* Form Container */
+.form-container {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  border-left: 4px solid #667eea;
+}
+
+.form-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.add-employee-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-add {
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-add:active {
+  transform: translateY(0);
+}
+
+.employee-count {
+  margin-top: 15px;
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* List Container */
+.list-container {
+  margin-top: 20px;
+}
+
+.list-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.no-employees {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 1.1em;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 1.8em;
+  }
+
+  .app-main {
+    padding: 20px;
+  }
+
+  .add-employee-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}

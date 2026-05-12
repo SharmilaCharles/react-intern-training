@@ -1,0 +1,158 @@
+.employee-card {
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Active Status Styling */
+.employee-card.active {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-color: #667eea;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.2);
+}
+
+.employee-card.active:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* Inactive Status Styling */
+.employee-card.inactive {
+  background: #f5f5f5;
+  border-color: #ccc;
+  opacity: 0.75;
+}
+
+.employee-card.inactive .employee-name {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.employee-card.inactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.employee-info {
+  flex: 1;
+}
+
+.employee-name {
+  color: #333;
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.employee-role {
+  color: #666;
+  font-size: 0.95em;
+  margin: 0;
+}
+
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-badge.inactive {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Card Actions */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.btn-toggle,
+.btn-delete {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.btn-toggle.activate {
+  background: #28a745;
+  color: white;
+}
+
+.btn-toggle.activate:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-toggle.deactivate {
+  background: #ffc107;
+  color: #333;
+}
+
+.btn-toggle.deactivate:hover {
+  background: #e0a800;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+.btn-toggle:active,
+.btn-delete:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .employee-card {
+    padding: 15px;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .employee-name {
+    font-size: 1.1em;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+}
