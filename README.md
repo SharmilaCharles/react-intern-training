@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React Admin Dashboard - Vite Project
 
 A scalable, professional React admin dashboard application built with Vite, React Router DOM, and modern best practices.
@@ -323,3 +324,6 @@ After building this project, you'll understand:
 - Dynamic routing patterns
 
 Enjoy building! 🚀
+=======
+# React Intern Training
+>>>>>>> f6bada020d94e1b0cfe0ebc12950c328e617e246
