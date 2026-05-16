@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "password123",
+      "name": "Admin User",
+      "role": "admin"
+    }
+  ],
+  "employees": [
+    {
+      "id": "1",
+      "name": "Deva",
+      "email": "deva@example.com",
+      "position": "Senior Developer",
+      "department": "Engineering",
+      "status": "Active",
+      "joinDate": "2023-01-15",
+      "phone": "+1 234 567 8901",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "id": "2",
+      "name": "Kishore",
+      "email": "kishore@example.com",
+      "position": "Product Manager",
+      "department": "Product",
+      "status": "Active",
+      "joinDate": "2023-02-20",
+      "phone": "+1 234 567 8902",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "id": "3",
+      "name": "Vinay",
+      "email": "vinay@example.com",
+      "position": "UI/UX Designer",
+      "department": "Design",
+      "status": "Inactive",
+      "joinDate": "2023-03-10",
+      "phone": "+1 234 567 8903",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "id": "4",
+      "name": "Ram",
+      "email": "ram@example.com",
+      "position": "QA Engineer",
+      "department": "Engineering",
+      "status": "Active",
+      "joinDate": "2023-04-05",
+      "phone": "+1 234 567 8904",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "id": "5",
+      "name": "David",
+      "email": "david@example.com",
+      "position": "DevOps Engineer",
+      "department": "Engineering",
+      "status": "Inactive",
+      "joinDate": "2023-05-12",
+      "phone": "+1 234 567 8905",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "id": "6",
+      "name": "Santhosh",
+      "email": "santhosh@example.com",
+      "position": "Full Stack Developer",
+      "department": "Engineering",
+      "status": "Active",
+      "joinDate": "2023-06-01",
+      "phone": "+1 234 567 8906",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
+    },
+    {
+      "name": "Test User",
+      "email": "test@example.com",
+      "position": "Developer",
+      "department": "Engineering",
+      "status": "Active",
+      "joinDate": "2026-05-16",
+      "avatar": "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y",
+      "id": "N3D3sRv8Ba8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
